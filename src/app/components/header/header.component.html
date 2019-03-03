@@ -17,7 +17,11 @@
 
     <!-- Navbar Right Menu -->
     <div class="navbar-custom-menu">
-      <p style="color: white">eddye@gmail.com - ADMIN | <button>TESTE</button></p>
+      <p style="color: white">{{ shared.user.email }} - {{ shared.user.profile }} |
+        <button class="btn btn-link" (click)="signOut()">
+          <font style="color: white">Sign out</font>
+        </button>
+      </p>
     </div>
   </nav>
 </header>
